@@ -382,6 +382,43 @@
             color: var(--white);
             opacity: 1;
         }
+
+        @media print {
+            .edit-alarm-btn {
+                display: none !important;
+            }
+
+            #addAlarmBtn {
+                display: none !important;
+            }
+
+            #alarmsContainer {
+                background-color: white;
+                color: var(--black);
+                gap: 0.5em;
+            }
+
+            body {
+                background-color: white !important;
+                color: var(--black) !important;
+            }
+
+            .alarm {
+                background-color: white !important;
+                color: var(--black) !important;
+            }
+
+            p {
+                color: var(--black) !important;
+            }
+
+            .alarm-state {
+                background-color: white !important;
+                color: var(--black) !important;
+                display: none !important;
+            }
+
+        }
     </style>
 </head>
 
